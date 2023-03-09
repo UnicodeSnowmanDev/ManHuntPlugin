@@ -1,0 +1,106 @@
+name: ManHunt
+version: 1.0
+api-version: 1.18
+main: com.UnicodeSnowman.dev.ManHunt
+author: PenisFuck Studios
+
+commands:
+  hvh:
+    description: enables hunter vs. hunter mode
+    usage: /hvh
+    permission: ManHunt.mode
+    
+  manhunt:
+    description: enables regular man hunt mode
+    usage: /manhunt
+    permission: ManHunt.mode
+
+  mongus:
+    description: enables amongus mode
+    usage: /mongus
+    permission: ManHunt.mode
+    
+  red:
+    description: sets a player to the red team
+    usage: /red [player]
+    permission: ManHunt.team
+    
+  blue:
+    description: sets a player to the blue team
+    usage: /blue [player]
+    permission: ManHunt.team
+    
+  imposter:
+    description: sets a player as the imposter
+    usage: /blue [player]
+    permission: ManHunt.team
+    
+  compass:
+    description: gives a player a compass
+    usage: /compass [player]
+    permission: ManHunt.compass
+    
+  imposterchat:
+    description: talk in the imposter chat
+    usage: /imposterchat message
+    aliases: [im, ic]
+    permission: ManHunt.ic
+    
+  start:
+    description: starts the man hunt
+    usage: /start
+    permission: ManHunt.start
+    
+  Commands:
+    description: starts the man hunt
+    usage: /start
+    permission: ManHunt.start
+
+  resume:
+    description: starts the man hunt
+    usage: /resume
+    permission: ManHunt.resume
+
+  resetplayer:
+    description: resets a player
+    usage: /resetplayer
+    permission: ManHunt.resume
+
+  invishunt:
+    description: resets a player
+    usage: /invishunt
+    permission: ManHunt.resume
+
+  randomhunter:
+    description: Chooses a random hunter
+    usage: /randomhunter
+    permission: ManHunt.resume
+
+permissions:
+  ManHunt.mode:
+    description: switch man hunt mode
+    default: op
+    
+  ManHunt.start:
+    description: start
+    default: op
+    
+  ManHunt.team:
+    description: set team during man hunt
+    default: true
+    
+  ManHunt.compass:
+    description: give player a compass
+    default: true
+    
+  ManHunt.ic:
+    description: give player a compass
+    default: true
+
+  ManHunt.reset:
+    description: reset a player
+    default: op
+
+  ManHunt.resume:
+    description: resume the game
+    default: op

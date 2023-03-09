@@ -1,0 +1,35 @@
+#Start Commands will run no matter what game mode is selected. hvhCommands and mongusCommands will only run with their respective game modes.
+startCommands: ["team modify Red nametagVisibility hideForOtherTeams", "team modify Blue nametagVisibility hideForOtherTeams", "time set 0", "effect give @a minecraft:saturation 100 100 true"]
+hvhCommands: []
+mongusCommands: ["team modify Blue nametagVisibility never", "team modify Red nametagVisibility hideForOtherTeams"]
+
+#Game Rules to be set when the man hunt starts. For now, only boolean game rules are supported.
+gameRulesGeneral:
+  doWeatherCycle: false
+  doInsomnia: false
+  universalAnger: true
+  
+hvhRules:
+
+#Set showDeathMessages to false to hide xxxxxx was not the imposter messages.
+mongusRules:
+  showDeathMessages: true
+  
+
+#Toggle public humiliation
+publicPunish: true
+#Enchantment Bans https://minecraft.fandom.com/el/wiki/Enchanting/ID
+bannedEnchantments:
+  - flame
+  - punch
+  - fire_aspect
+  - knockback
+  
+#Potion Bans https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionType.html
+bannedPotions:
+  - STRENGTH
+  - INSTANT_DAMAGE
+
+#The world border. Note this is either direction. ie. 4000 will result in a border that is 8000x8000.
+worldBorder: 4000
+netherBorder: 1000
